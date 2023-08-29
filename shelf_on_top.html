@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: darkgreen;
+            color: white;
+            font-weight: bold;
+        }
+
+        .center-text {
+            text-align: center;
+            font-size: 1.5em; /* Increase the font size to match "Cage 1 On Top" */
+            font-weight: bold; /* Make it bold */
+            margin: 10px 0;    /* Adjust margin for better spacing */
+        }
+
+        .darkgreen-background {
+            background-color: darkgreen;
+        }
+
+        .orange-background {
+            background-color: orange;
+        }
+
+        .add-labware-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2 class="center-text darkgreen-background">Cage 1 On Top</h2>
+
+<div class="center-text orange-background">
+    <span><a href="file:///C:/Users/vikmol/OneDrive/Dokumenter/GitHub/inventory_managment_web_app/overview.html">Back to Overview</a></span>
+    <button class="add-labware-btn">Add Labware</button>
+</div>
+
+<table>
+    <tr>
+        <th>✓</th>
+        <th>Vessel type</th>
+        <th>Item Category</th>
+        <th>Item full name</th>
+        <th>Conversion</th>
+        <th>Comment</th>
+    </tr>
+    <!-- Rows for each item. -->
+    <tr>
+        <td><input type="checkbox" checked></td> <!-- Checkbox for TRUE -->
+        <td>carboard box</td>
+        <td>MTP lid</td>
+        <td>Lid With condensation ring, PS, High Profile, ref: 656170</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <!-- ... repeat for other items ... -->
+    <tr>
+        <td><input type="checkbox"></td> <!-- Checkbox for FALSE -->
+        <td>carboard box</td>
+        <td>96DWP</td>
+        <td>Deep Well Plate 2.2ML PP Unsteril, 701354</td>
+        <td></td>
+        <td>actually on the right side of cage 1</td>
+    </tr>
+    <!-- ... and so on ... -->
+</table>
+
+</body>
+
+</html>
