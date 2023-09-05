@@ -4,3 +4,6 @@ change password to something stronger
 chane the postgres user from postgres to something else, when it goes into production. 
 
 Try to do some test hacks. 
+
+
+python -m django startproject demo

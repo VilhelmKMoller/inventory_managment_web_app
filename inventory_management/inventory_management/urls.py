@@ -1,5 +1,5 @@
 """
-URL configuration for inventory_managment project.
+URL configuration for inventory_management project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,12 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-# from storage.views import overview  # adjust the import if your views.py is in a different location
-from storage import views
-
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.overview, name='overview'),
 ]
